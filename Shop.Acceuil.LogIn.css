@@ -21,6 +21,10 @@ h1 {
   margin-top: 0;
   padding-top: 30px;
   margin-left: 10px;
+  padding-right: 10px;
+  background: linear-gradient(45deg, #0a4755, #206e7f, #4bbad3, #6cc5f4, #97d7fc, #b6e0ff, #d4ebff, #f0f8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -35,6 +39,8 @@ h1 {
 .contener{
     width: 100%;
     margin: auto;
+    margin-top: 0px;
+    
 }
 .contener section {
   width: 80%;
@@ -108,17 +114,20 @@ h2{
 }
    
 
-h3{font-size: 1.5em;text-transform: uppercase;}
+h4{font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif
+}
 
-h3:before{content: open-quote ;color: grey;}
+h4:before{content: open-quote ;color: grey;}
 
-h3:after{content: close-quote;color:grey}
+h4:after{content: close-quote;color:grey}
 
 p{
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
-    color :#bbbaba
+    color:black
 }
 
 section{
@@ -131,12 +140,19 @@ section{
 
 a{
     text-decoration: none;
-    color: black; 
+    color: rgb(255, 255, 255); 
     text-shadow: 0px, 3px ,1px ,-1p, black;
     font-size: 1.1em;   
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-a:hover{font-weight: bold;}
+a:hover {
+  text-decoration: underline;
+  background: linear-gradient(135deg, #0a4755, #4bbad3, #97d7fc); /* Ajout de la quatrième couleur */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 nav{
@@ -144,7 +160,7 @@ nav{
    /* background: white;*/
     box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0,5);
     font-size: 1.3em;
-    padding: 15px; 
+    padding: 30px; 
     position: relative;  
     left: 0px;
     right: 0px;
@@ -167,24 +183,37 @@ li{
                  /* contact */
 #contact {
   order: 1px black solid;
-  border-radius: 15px;
-  padding: 30px;
-  margin-bottom: 50px;
+  border-radius: 0px;
+  padding: -30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   align-items: center;
   justify-content: center;
   text-align: center; /* Add text-align center to center the card content */
   flex-direction: column;
   display: flex;
 }
-
-footer{background: #1d1d1d;
-    color: white;
-    text-align: center;
-    padding:15px ;
-    width: 100%;
-    /*position: fixed;*/
-    bottom: 0;
-    margin-top: 1500px;
+#contact .h4{
+margin-bottom: -10px;
+margin-top: -10px;
+}
+footer span {
+  display:flex;
+   align-items: center;
+}
+footer{
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  background-image: url('https://img.freepik.com/vecteurs-libre/banniere-large-noire-design-lignes-ombre_1017-34216.jpg?t=st=1710846421~exp=1710850021~hmac=db42a722879ea481249a76680083eaf6168d9ce76547d898878e44ae38bb49f6&w=1380');
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir entièrement l'élément */
+  background-repeat: no-repeat;
+  background-position: center; /* Centre l'image horizontalement et verticalement */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
 }
 
 
@@ -193,10 +222,9 @@ footer{background: #1d1d1d;
 @media all and (max-width:1000px){
 
         .projet{width: 100%;margin: 15%;auto}
-        .projet{width: 100%;  min-width: auto ;height: auto;}
+        .projet{width: 100%;min-width: auto;height:auto;}
         .projet.picture{width: 100%;height: auto;}
         header h2 {width: 90%;}
-   
 }
 h1{
 font-size: 100px;
@@ -205,13 +233,13 @@ font-size: 100px;
 .card {
     width: fit-content;
     height: fit-content;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(230, 6, 6, 0.);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 25px 25px;
     gap: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    box-shadow: 0px 0px 20px rgba(237, 6, 6, 0.055);
   }
   
   /* for all social containers*/
@@ -286,7 +314,7 @@ font-size: 100px;
     background-color: rgb(255, 255, 255);
     padding: 15px 20px;
     border-radius: 50px;
-    margin-left: 300px;
+    margin-left: 150px;
   }
   .tab {
     display: flex;
@@ -314,6 +342,14 @@ header {
     grid-template-columns: 1fr 2fr 1fr; /* Une colonne à gauche, une colonne au centre, une colonne à droite */
     gap: 20px; /* Espacement entre les colonnes */
     padding: 20px; /* Espacement autour de la grille */
+    width: 100%;
+  height: 170px; /* Hauteur fixe */
+  background-image: url('https://img.freepik.com/vecteurs-libre/banniere-large-noire-design-lignes-ombre_1017-34216.jpg?t=st=1710846421~exp=1710850021~hmac=db42a722879ea481249a76680083eaf6168d9ce76547d898878e44ae38bb49f6&w=1380');
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir entièrement l'élément */
+  background-repeat: no-repeat;
+  background-position: center; /* Centre l'image horizontalement et verticalement */
+  padding: 20px;
+  box-sizing: border-box;
 }
 .right-zone{
 align-items: right;
@@ -333,35 +369,237 @@ border: 0px
     text-align:center;
     border: 0px;
     padding-bottom:200px;
+    margin-left: -40px;
 }
 .left-zone img {
     width: 60%; /* La largeur de l'image est définie à 100% de la largeur de la zone parente */
     height: auto; /* La hauteur est automatiquement ajustée pour maintenir le rapport hauteur/largeur */
     display: block; /* Supprime l'espace réservé sous l'image en tant qu'élément en ligne */
-    margin-left: 40px;
+    margin-left: 0px;
     border: 0px
 }
 .center-zone{
-    margin-left: 200px;
+    margin-left: 100px;
     border: 0px
+    
 }
 .pattern{
 background-color:black;
 }
 .left-zone h1 {
-  font-size: 50px; /* Modifie la taille de la police pour les éléments h1 à l'intérieur de .left-zone */
+  font-size: 50px;
+ color: #ffffff;
 }
-.Fond {
-  width: 100%;
-  height: 570px; /* Hauteur fixe */
-  background-image: url('https://c.wallhere.com/photos/21/49/Nike_simple_background_blue_background_grunge_grainy_wall_4K_texture-2203655.jpg!d');
-  background-size: cover; /* Ajuste la taille de l'image pour couvrir entièrement l'élément */
-  background-repeat: no-repeat;
-  background-position: center; /* Centre l'image horizontalement et verticalement */
-  padding: 20px;
+
+.contener h3{
+  font-size: 2.8em;
+  color:#1E1E1E;
+  font-family: cursive;
+
+}
+.span{
+  display: flex;
+  align-items: center;
+  background-color: #1E1E1E;
+}
+:root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+body{
+  height: 100%;
+}
+
+.hero-section{
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+  margin-top: -30px;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card1{
+  list-style: none;
+  position: relative;
+}
+
+.card1:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.9) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card1:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card1:not(:hover) .card__background{
+  filter: brightness(0.75) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+}
+.Produits{
+  margin-left:-10px ;
+  margin-right:-10px ;
+}
 
 
+/*<span>2024&copy;Youssef-Marin-Gabriel</span>*/
 
+/*LogIn*/
+.login-card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px 10px #ccc;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.card-header .log {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+  color: black;
+}
+/*Fin LogIn*/
+.zone-gauche {
+  background-color: rgb(255, 255, 255); /* Couleur de fond de la zone gauche */
+  align-items: left;
+  display: flex;
+  margin-left: -250px;
+}
+
+.zone-droite {
+  background-color: rgb(255, 255, 255); /* Couleur de fond de la zone droite */
+  align-items: right;
+  display: flex;
+  margin-right: 400px;
+  
+
+  
+}
