@@ -1,5 +1,12 @@
-body{ font-family: 'roboto',sans-serif, cursive;background-color:#f4f7f6;margin: 0 ;
-    zoom: 80%;
+body{
+font-family: 'roboto',sans-serif, cursive;
+background-color:#f4f7f6;
+margin: 0 ;
+zoom: 80%;
+background-image: url(https://a.cdn-hotels.com/gdcs/production97/d1191/e0302272-b160-412f-8f4f-d6e6f977ae58.jpg);
+background-size: cover; /* ajuster la taille de l'image pour couvrir tout l'écran */
+background-position: center; /* centrer l'image */
+background-repeat: no-repeat; /* ne pas répéter l'image */
     }
 
 *{box-sizing: border-box;}
@@ -18,8 +25,8 @@ h1{
     font-size: 1.8em;
     margin-top: 0;
     padding-top: 30px;
-   
-   
+
+
 }
 
 
@@ -45,7 +52,7 @@ h1{
     display: inline-block;
     justify-content: space-between;
 
-    
+
 
 
 }
@@ -58,7 +65,7 @@ h1{
     border: 0px black solid;
     border-radius: 10px  ;
     overflow:hidden ;
-   
+
 }
 
 .projet:hover{
@@ -77,7 +84,7 @@ h1{
     overflow: hidden;
     margin-bottom: 10px;
     display: block;
-    
+
 }
 .picture img {
     width: 100%;
@@ -109,7 +116,7 @@ h2{
     margin: auto;
     text-transform: uppercase;
 }
-   
+
 
 h3{font-size: 1.5em;text-transform: uppercase;}
 
@@ -159,21 +166,26 @@ li{
 
                  /* contact */
 #contact {
-    border: 1px black solid;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 50px;
     align-items: center;
     justify-content: center;
     text-align: center; /* Add text-align center to center the card content */
     flex-direction: column;
-    display: flex;}
+    display: flex;
+    }
 
-footer{background: #1d1d1d;
+footer{
+    background: #1d1d1d;
     color: white;
-    text-align: center;
-    padding:15px ;
+    padding:5px ;
     width: 100%;
+            
+            left: 0;
+            bottom: 0;
+            width: 100%; /* Prend toute la largeur */
+            background-color: #333; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-align: center; /* Alignement du texte */
+            padding: 10px 0; /* Espacement intérieur */
 }
 
 
@@ -202,7 +214,7 @@ font-size: 100px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
   }
-  
+
   /* for all social containers*/
   .socialContainer {
     width: 52px;
@@ -216,73 +228,49 @@ font-size: 100px;
   }
   /* instagram*/
   .containerOne:hover {
-    background: #f09433;
-    background: -moz-linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    background: -webkit-linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    background: linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        background: #999999;
+    transition-duration: .3s;
 }
-  
+
   /* Google*/
   .containerTwo:hover {
-    background: linear-gradient(45deg, #4285F4, #0F9D58, #F4B400, #DB4437);
+        background: #999999;
     transition-duration: .3s;
-  }
+}
   /* GitHub*/
   .containerThree:hover {
-    background: linear-gradient(45deg, #0a4755, #206e7f, #4bbad3);
+        background: #999999;
     transition-duration: .3s;
   }
   /* Whatsapp*/
   .containerFour:hover {
-    background: linear-gradient(45deg, #25d366, #34b7f1);
+        background: #999999;
     transition-duration: .3s;
   }
-  
+
   .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
   }
-  
+
   .socialSvg {
     width: 17px;
   }
-  
+
   .socialSvg path {
     fill: rgb(255, 255, 255);
   }
-  
+
   .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
   }
-  
+
   @keyframes slide-in-top {
     0% {
       transform: translateY(-50px);
       opacity: 0;
     }
-  
+
     100% {
       transform: translateY(0);
       opacity: 1;
@@ -346,9 +334,8 @@ text-align: right;
     height: auto; /* La hauteur est automatiquement ajustée pour maintenir le rapport hauteur/largeur */
     display: block; /* Supprime l'espace réservé sous l'image en tant qu'élément en ligne */
     margin-left: 40px;
-    
+
 }
 .center-zone{
     margin-left: 200px;
 }
-  
