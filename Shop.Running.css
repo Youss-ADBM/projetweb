@@ -1,6 +1,6 @@
 body{ font-family: 'roboto',sans-serif, cursive;background-color:#f4f7f6;margin: 0 ;
     zoom: 80%;
-    background: url(https://d3e1m60ptf1oym.cloudfront.net/832f25cb-4cb0-4075-ab40-3d6f6ba89718/Ferpecle_torrent_pont_uxga.jpg);
+    background: white;
     background-size: cover; /
     background-position: center;
     background-attachment: fixed;
@@ -10,11 +10,10 @@ body{ font-family: 'roboto',sans-serif, cursive;background-color:#f4f7f6;margin:
 
 .entete{
     text-align: center;
-    background: #1D1D1D;
-    color: white;
-    padding-bottom: 30px ;
+    color: black ;
+    /*background-color: white;*/
+    padding-bottom: 0px ;
 }
-
 h3{
     font-family: monospace;
     font-size: 5em;
